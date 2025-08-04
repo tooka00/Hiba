@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <title>برامج حسابية - هبة فيصل</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>برامج حسابية</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="projects.html">الأعمال</a></li>
+        <li><a href="tools.html">برامج حسابية</a></li>
+        <li><a href="contact.html">تواصل معي</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>حساب حجم الأسطوانة</h2>
+    <label>نصف القطر: <input type="number" id="radiusCylinder" /></label>
+    <label>الارتفاع: <input type="number" id="heightCylinder" /></label>
+    <button onclick="calcCylinder()">احسب</button>
+    <p id="cylinderResult"></p>
+
+    <h2>مساحة الدائرة</h2>
+    <label>نصف القطر: <input type="number" id="radiusCircle" /></label>
+    <button onclick="calcCircle()">احسب</button>
+    <p id="circleResult"></p>
+
+    <h2>حل معادلة من الدرجة الثانية</h2>
+    <label>a: <input type="number" id="a" /></label>
+    <label>b: <input type="number" id="b" /></label>
+    <label>c: <input type="number" id="c" /></label>
+    <button onclick="solveQuadratic()">احسب</button>
+    <p id="quadResult"></p>
+  </section>
+</body>
+</html>
